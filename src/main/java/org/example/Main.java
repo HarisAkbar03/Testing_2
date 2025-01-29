@@ -58,11 +58,10 @@ public class Main {
         public void printinfo()
         {
             Vehicle v1 = new Vehicle();
-            System.out.println(v1.color);
-            System.out.println(v1.enginesize);
-            System.out.println(v1.fueltype);
-            System.out.println(v1.numofwheels);
-            honk();
+            System.out.println("The color of the Car is "+ v1.color);
+            System.out.println("The Engine Size of the Car is " +v1.enginesize);
+            System.out.println("The Fuel Type of the Car is " + v1.fueltype);
+            System.out.println("Number of Wheels of the Car is " + v1.numofwheels);
         }
 
     }
