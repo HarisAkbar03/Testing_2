@@ -7,16 +7,10 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 5; i++)
-        {
-            for (int j = 1 ; j <= i ; j++)
-            {
-                System.out.println("* ");
-            }
-            System.out.println();
-        }
+        Car c1 = new Car();
+        c1.printinfo();
     }
-    public class Vehicle
+    public static class Vehicle
     {
         int numofwheels;
         String color;
@@ -53,8 +47,23 @@ public class Main {
             return numofwheels;
         }
     }
-    public class Car extends Vehicle
+    public static class Car extends Vehicle
     {
         String brand;
+
+        public void honk()
+        {
+            System.out.println("Honk,Honk!");
+        }
+        public void printinfo()
+        {
+            Vehicle v1 = new Vehicle();
+            System.out.println(v1.color);
+            System.out.println(v1.enginesize);
+            System.out.println(v1.fueltype);
+            System.out.println(v1.numofwheels);
+            honk();
+        }
+
     }
 }
